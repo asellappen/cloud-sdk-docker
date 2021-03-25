@@ -12,6 +12,7 @@
 
 language: generic
 
+dist: focal
 
 arch:
  - amd64
