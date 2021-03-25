@@ -17,9 +17,9 @@ arch:
  - amd64
  - ppc64le
  
- 
+services:
+  - docker
+  
 scripts: 
-   - if [ -f docker-compose.test.yml ]; then
-       docker-compose --file docker-compose.test.yml build;
-       docker-compose --file docker-compose.test.yml run sut;
-     fi 
+   - docker-compose --file docker-compose.test.yml build;
+   - docker-compose --file docker-compose.test.yml run sut;
