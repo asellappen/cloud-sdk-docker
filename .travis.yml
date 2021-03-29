@@ -23,5 +23,5 @@ services:
   
 scripts: 
   - docker pull gcr.io/google.com/cloudsdktool/cloud-sdk:latest
-  - docker run gcr.io/google.com/cloudsdktool/cloud-sdk:latest gcloud version
+  - docker run gcr.io/google.com/cloudsdktool/cloud-sdk:latest
   - Google Cloud SDK 159.0.0
