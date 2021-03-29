@@ -10,7 +10,7 @@
 #
 # ----------------------------------------------------------------------------
 
-language: generic
+language: python
 
 dist: focal
 
@@ -20,7 +20,11 @@ arch:
  
 services:
   - docker
-  
+
+
+before_install:
+  - sudo apt-get install rustc
+  - pip install --upgrade pip
 scripts: 
   - docker pull gcr.io/google.com/cloudsdktool/cloud-sdk:latest
   - docker run gcr.io/google.com/cloudsdktool/cloud-sdk:latest
