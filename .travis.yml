@@ -22,5 +22,6 @@ services:
   - docker
   
 scripts: 
-   - docker-compose --file docker-compose.test.yml build;
-   - docker-compose --file docker-compose.test.yml run sut;
+  - docker pull gcr.io/google.com/cloudsdktool/cloud-sdk:latest
+  - docker run gcr.io/google.com/cloudsdktool/cloud-sdk:latest gcloud version
+  - Google Cloud SDK 159.0.0
